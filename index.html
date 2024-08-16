@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Moderne Website mit attraktiven Features und Animationen.">
+    <meta name="keywords" content="modern, webdesign, animation, responsive, cookies, gallery">
+    <title>SV Mahdi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/mahdi_400x400-qr43l9qjpba7jnwykzngtmslxu5tvrh7qk3sb5fu6w.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Cookie Messagebox -->
+    <div id="cookie-messagebox" class="cookie-messagebox">
+        <div class="cookie-messagebox-content">
+            <p>Diese Website verwendet Cookies, um Ihnen die bestmögliche Erfahrung zu bieten. <a href="#cookie-policy">Erfahren Sie mehr</a></p>
+            <button id="accept-cookies">Akzeptieren</button>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="spieler.html">Spieler</a></li>
+            <li class="nav-item"><a href="aktivitaeten.html">Aktivitäten</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header with Logo -->
+    <header class="header">
+        <div class="logo">
+            <img src="./img/mahdi_400x400-qr43l9qjpba7jnwykzngtmslxu5tvrh7qk3sb5fu6w.png" alt="Logo">
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="section">
+        <p> Willkommen beim SV Mahdi, <br> Ihrem leidenschaftlichen Sportverein in Wien! Seit unserer Gründung haben wir uns der Förderung des Sports und der Gemeinschaft in unserer Stadt verschrieben. Unser Verein bietet eine breite Palette von sportlichen Aktivitäten für Menschen jeden Alters und jeder Leistungsstufe. Der SV Mahdi ist stolz darauf, ein Ort zu sein, an dem Menschen mit ähnlichen Interessen zusammenkommen und Freundschaften fürs Leben schließen können. Wir freuen uns darauf, Sie in unserem Verein willkommen zu heißen und gemeinsam sportliche Erfolge zu feiern. 
+            <br> Mit sportlichen Grüßen, <br> Das Team des SV Mahdi</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="./img/bild1.jpg" alt="Bild 1">
+            </div>
+            <div class="gallery-item">
+                <img src="./img/bild2.jpg" alt="Bild 2">
+            </div>
+            <div class="gallery-item">
+                <img src="./img/bild3.jpg" alt="Bild 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h1>Kontaktieren Sie uns</h1>
+        <form
+        action="https://formspree.io/f/manwbjjw" method="POST">
+        <label>
+          Ihre Email-Adresse:
+          <input type="email" name="email">
+        </label>
+        <label>
+            Ihre Telefonnummer:
+            <input type="tel" name="number">
+          </label>
+        <label>
+          Ihre Nachricht:
+          <textarea name="message"></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="section">
+        <h2>Unser Standort</h2>
+        <div id="google-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.746150904843!2d16.395592399999998!3d48.1922423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d076759f19b05%3A0x36d120160fccef0c!2sUSI%20Sportst%C3%A4tte%20Rennweg!5e0!3m2!1sde!2sat!4v1723761890909!5m2!1sde!2sat" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="https://www.instagram.com/sv_mahdi_wien?igsh=bTN5MWo1a2dmY3lq" target="_blank"><img src="./img/Instagram_logo_2022.svg.png" alt="Instagram" width="50px"></a>
+            </div>
+            <div class="impressum">
+                <a href="impressum.html">Impressum</a>
+            </div>
+        </div>
+        <button id="scroll-to-top" title="Nach oben scrollen">&uarr;</button>
+    </footer>
+
+    <!-- Modal for Image Zoom -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
